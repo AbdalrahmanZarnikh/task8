@@ -1,0 +1,142 @@
+.sign{
+    height: 100vh;
+     background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 2px 5px 10px 0px #0000001A;
+     
+    
+}
+.up{
+    height: 100% !important;
+}
+
+.content-sign{
+    width: 476px;
+    min-height: fit-content;
+    background-color: white;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #E5E5E5;
+    padding: 40px 10px; 
+    border-radius: 20px;
+
+}
+
+.content-sign img{
+    margin-bottom: 40px;
+}
+
+.content-sign form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.content-sign form input{
+    height: 44px;
+    border-radius: 4px;
+    padding: 15px;
+    border: 1px solid #E5E5E5;
+    color: #CDCDCD;
+
+}
+
+.content-sign form input::placeholder{
+    color: #CDCDCD;
+    font-size: 12px;
+}
+
+.content-sign form label{
+    color: #6C6C6C;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.content-sign .sign-text {
+    text-align: center;
+}
+
+.content-sign .sign-text h2{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 9px;
+}
+.content-sign .sign-text p{
+    color: #6C6C6C;
+    line-height: 17px;
+    margin-bottom: 50px;
+}
+
+.content-sign form input[type="submit"]{
+    background: #FEAF00;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 27px;
+}
+
+.content-sign form input[type="submit"]:hover{
+    background: #FF9900;
+}
+
+.content-sign .create-one{
+    color: #FEAF00;
+
+}
+
+
+form .twice-input{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.file{
+
+    border: 1px solid #384EB74D;
+    display: none;
+}
+
+.container-upload{
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    border: 1px dashed #384EB74D;
+    background: #F8F8FF;
+    position: relative;
+
+}
+
+.container-upload .upload{
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+  
+  .custom-file-upload input[type="file"] {
+    display: none;
+  }
+  
+  @media screen and (max-width:992px) {
+ 
+     form .twice-input {
+        flex-direction: column;
+        gap: 10px;
+     }
+  }
+  
+  
+
+

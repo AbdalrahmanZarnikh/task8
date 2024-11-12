@@ -1,0 +1,95 @@
+.content-new-product{
+    margin-left: 64px;
+    margin-top: 24px;
+}
+.content-new-product img{
+    margin-bottom: 76px;
+}
+.content-new-product h1{
+    margin-bottom: 65px;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 73px;
+}
+
+.content-new-product form{
+    display: flex;
+    justify-content: start;
+    gap: 35px;
+}
+.content-new-product .custom-file-upload .container-upload{
+    width: 547px !important;
+    height: 209px;
+
+}
+.content-new-product .custom-file-upload .container-upload .upload{
+    width: 120px !important;
+    height: 108px !important;
+}
+
+.content-new-product form .text-product{
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+  
+}
+.content-new-product form .text-product div,.image-product{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+.content-new-product .image-product .container-upload{
+    margin-bottom: 100px;
+}
+.content-new-product form .text-product input{
+    width: 415px;
+    height: 44px;
+    padding: 15px;
+    border: 1px solid #E5E5E5
+}
+.content-new-product from .text-product input::placeholder{
+    color: #CDCDCD;
+    font-size: 12px;
+    line-height: 14px;
+}
+.content-new-product label{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    color: #6C6C6C;
+
+}
+.content-new-product input[type="submit"]{
+    max-width: 199px;
+    height: 61px;
+    background-color: #FEAF00;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+    cursor: pointer;
+}
+.content-new-product input[type="submit"]:hover{
+    background-color: #FF9900;
+}
+
+
+
+@media screen and (max-width: 992px) {
+     .content-new-product form{
+        flex-direction: column;
+        align-items:start;
+        /* justify-content: center; */
+     }
+     .content-new-product form .text-product input{
+        width: 300px;
+     }
+
+     .content-new-product .custom-file-upload .container-upload{
+        width: 200px !important;
+        height: 200px;
+     }
+}

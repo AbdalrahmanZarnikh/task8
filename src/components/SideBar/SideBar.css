@@ -1,0 +1,145 @@
+.side-bar{
+    max-width: 270px;
+    height: 100vh;
+    background: #F2EAE1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.side-bar .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.side-bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 90px;
+}
+.side-bar .info .info-text{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.side-bar .logo2{
+    width: 85px;
+    margin-top: 35px;
+    border-left: 4px solid #F8D442;
+    padding-left: 10px;
+    margin-bottom: 54px;
+}
+
+.side-bar ul {
+    list-style: none;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.side-bar .user-image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+}
+.side-bar ul .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 40px;
+    
+    
+}
+.side-bar ul .link.active{
+    background: #FEAF00;
+    border-radius: 4px;
+}
+
+.side-bar ul  .link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+
+
+}
+.side-bar ul .link:hover{
+    background: #FEAF00;
+    border-radius: 4px;
+}
+
+
+
+
+
+.side-bar .vector1{
+    width: 24px;
+    margin-right: 8px;
+}
+.side-bar .vector2{
+    width: 12px;
+    margin-right: 19px;
+}
+
+.logout{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logout p{
+    font-weight: 500;
+    line-height: 17px;
+}
+.logout button{
+    border: none;
+    cursor: pointer;
+}
+.logout img{
+    width: 17px;
+}
+
+.hamburger-menu{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 12;
+    display: none;
+  }
+  .side-bar.display{
+    transform: translateX(0);
+  }
+
+
+@media screen and (max-width:992px) {
+     .side-bar{
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: 10;
+         width: 300px;
+         transform: translateX(-100%);   
+
+     }
+     .hamburger-menu{
+        display: block;
+     }
+     
+}
