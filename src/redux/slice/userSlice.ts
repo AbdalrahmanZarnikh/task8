@@ -1,25 +1,10 @@
-import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice } from "@reduxjs/toolkit";
 
 interface UserState{
   name:string | null;
   email:string | null;
   image:string | null;
 }
-
-const getAllProducts=createAsyncThunk("products/getall",async(url,asyncThunk)=>{
-    const {rejectWithValue}=asyncThunk;
-    try {
-      const res=  await axios.get("https://test1.focal-x.com/api/items", {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-      })
-      return res.data;
-    } catch (error:any) {
-        rejectWithValue(error.message)
-    }
-})
 
 
 
