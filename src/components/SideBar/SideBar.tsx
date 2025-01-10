@@ -2,13 +2,10 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "./SideBar.css";
 import "../../App.css"
 import axios from "axios";
-import { useSelector } from "react-redux";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
 const SideBar = () => {
-  const infoUsers = useSelector((state: any) => state.user);
-  const infoUser = infoUsers[infoUsers.length - 1];
 
   // const  imageUser=infoUser.image ? infoUser.image : "/images/user.png";
 
